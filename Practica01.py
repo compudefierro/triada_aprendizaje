@@ -17,50 +17,55 @@ varInputN4 = 'Romualdo Rafa Manguerto'
 
 if varInputN1.isdigit() == True:
     if len(varInputN1) == 2:
-        print('es edad')
         edad = varInputN1
     elif type(varInputN1 == int):
-        print('es dni')
         dni = varInputN1
     else:
-        print('es fecha')
         fecha = varInputN1
 
 if varInputN2.isdigit() == True:
     if len(varInputN2) == 2:
-        print('es edad')
         edad = varInputN2
     elif type(int(varInputN2)) == int:
-        print('es dni')
         dni = varInputN2
     else:
-        print('es fecha')
         fecha = varInputN2
 
 if varInputN3.isdigit() == True:
     if len(varInputN3) == 2:
-        print('es edad')
         edad = varInputN3
     elif type(varInputN3) == int:
-        print('es fecha')
         fecha = varInputN3
     else:
-        print('es fecha')
         fecha = varInputN3
 
 if varInputN4.isdigit() == True:
     if len(varInputN3) == 2:
-        print('es edad')
         edad = varInputN3
     elif type(varInputN3) == int:
-        print('es fecha')
         fecha = varInputN3
     else:
-        print('es fecha')
         fecha = varInputN3
 else:
     nombre = varInputN4.title()
-    print('es nombre')
+    
     
 # TODO: presentar la informacion filtrada:
-
+# variables: edad, dni, fecha, nombre
+print('=' * 10)
+print(f'Bienvenido {nombre}!!')
+print('=' * 10)
+print('Elija una opcion: ')
+print('1- Ver datos sin formato.')
+print('2- Ver datos ordenados.')
+print('-' * 10)
+opcion = input('> ')
+print(f'Opcion >{opcion}< ingresada.')
+print('Procesando...')
+print('*' * 10)
+if opcion == '1':
+    print(f'Datos: {edad} / {fecha} / {dni}')
+elif opcion == '2':
+    print(f'Nombre completo: {nombre}\n Edad: {edad}\n DNI Nro:{dni}\n Fecha Nacimiento: {fecha}')
+else:
+    print('Opcion inexistente...Chauuuuuuu')
