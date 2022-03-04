@@ -10,6 +10,7 @@
 
 # PROBLEMAS conocidos: codigo repetitivo/duplicado.
 # La entrada de datos deberia ser de tipo list.
+# Consejo: Usar funciones atomicas para los distintos procesos
 varInputN1 = '38'
 varInputN2 = '20121980'
 varInputN3 = 43098196
