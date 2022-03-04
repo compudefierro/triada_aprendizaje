@@ -12,7 +12,7 @@
 # La entrada de datos deberia ser de tipo list.
 varInputN1 = '38'
 varInputN2 = '20121980'
-varInputN3 = '43098196'
+varInputN3 = 43098196
 varInputN4 = 'Romualdo Rafa Manguerto'
 
 if varInputN1.isdigit() == True:
@@ -27,23 +27,23 @@ if varInputN2.isdigit() == True:
     if len(varInputN2) == 2:
         edad = varInputN2
     elif type(int(varInputN2)) == int:
-        dni = varInputN2
+        fecha = varInputN2
     else:
         fecha = varInputN2
 
-if varInputN3.isdigit() == True:
-    if len(varInputN3) == 2:
+if type(varInputN3) == int:
+    if varInputN3 == 2:
         edad = varInputN3
-    elif type(varInputN3) == int:
-        fecha = varInputN3
+    elif type(type(varInputN3)) == int:
+        dni = varInputN3
     else:
-        fecha = varInputN3
+        dni = varInputN3
 
 if varInputN4.isdigit() == True:
     if len(varInputN3) == 2:
         edad = varInputN3
     elif type(varInputN3) == int:
-        fecha = varInputN3
+        dni = varInputN3
     else:
         fecha = varInputN3
 else:
