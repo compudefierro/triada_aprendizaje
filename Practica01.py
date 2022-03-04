@@ -12,12 +12,9 @@
 # La entrada de datos deberia ser de tipo list.
 # Consejo: Usar funciones atomicas para los distintos procesos
 
-datosEntrar = []
-
-varInputN1 = '38'
-varInputN2 = '20121980'
-varInputN3 = 43098196
-varInputN4 = 'Romualdo Rafa Manguerto'
+# Formato entrada de datos estandarizada.
+# datosEntrada = [edad:String, fecha:String, dni:int, nombre:String]
+datosEntrada = ['38', '20121980', 43098196, 'Romualdo Rafa Manguerto']
 
 if varInputN1.isdigit() == True:
     if len(varInputN1) == 2:
