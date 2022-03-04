@@ -8,9 +8,11 @@
 
 # Version 0.1
 
+# PROBLEMAS conocidos: codigo repetitivo/duplicado.
+# La entrada de datos deberia ser de tipo list.
 varInputN1 = '38'
 varInputN2 = '20121980'
-varInputN3 = 43098196
+varInputN3 = '43098196'
 varInputN4 = 'Romualdo Rafa Manguerto'
 
 if varInputN1.isdigit() == True:
@@ -28,7 +30,7 @@ if varInputN2.isdigit() == True:
     if len(varInputN2) == 2:
         print('es edad')
         edad = varInputN2
-    elif type(varInputN2) == int:
+    elif type(int(varInputN2)) == int:
         print('es dni')
         dni = varInputN2
     else:
@@ -40,8 +42,25 @@ if varInputN3.isdigit() == True:
         print('es edad')
         edad = varInputN3
     elif type(varInputN3) == int:
-        print('es dni')
-        dni = varInputN3
+        print('es fecha')
+        fecha = varInputN3
     else:
         print('es fecha')
         fecha = varInputN3
+
+if varInputN4.isdigit() == True:
+    if len(varInputN3) == 2:
+        print('es edad')
+        edad = varInputN3
+    elif type(varInputN3) == int:
+        print('es fecha')
+        fecha = varInputN3
+    else:
+        print('es fecha')
+        fecha = varInputN3
+else:
+    nombre = varInputN4.title()
+    print('es nombre')
+    
+# TODO: presentar la informacion filtrada:
+
