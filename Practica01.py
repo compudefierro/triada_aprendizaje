@@ -16,40 +16,13 @@
 # datosEntrada = [edad:String, fecha:String, dni:int, nombre:String]
 datosEntrada = ['38', '20121980', 43098196, 'Romualdo Rafa Manguerto']
 
-if varInputN1.isdigit() == True:
-    if len(varInputN1) == 2:
-        edad = varInputN1
-    elif type(varInputN1 == int):
-        dni = varInputN1
-    else:
-        fecha = varInputN1
+# Funcion que recibe la lista, la procesa y retorna las variables
 
-if varInputN2.isdigit() == True:
-    if len(varInputN2) == 2:
-        edad = varInputN2
-    elif type(int(varInputN2)) == int:
-        fecha = varInputN2
-    else:
-        fecha = varInputN2
-
-if type(varInputN3) == int:
-    if varInputN3 == 2:
-        edad = varInputN3
-    elif type(type(varInputN3)) == int:
-        dni = varInputN3
-    else:
-        dni = varInputN3
-
-if varInputN4.isdigit() == True:
-    if len(varInputN3) == 2:
-        edad = varInputN3
-    elif type(varInputN3) == int:
-        dni = varInputN3
-    else:
-        fecha = varInputN3
-else:
-    nombre = varInputN4.title()
+def proceso(lista):
+    return lista[0],lista[1],lista[2],lista[3],
     
+edad, fecha, dni, nombre = proceso(datosEntrada)        
+
     
 # TODO: presentar la informacion filtrada:
 # variables: edad, dni, fecha, nombre
